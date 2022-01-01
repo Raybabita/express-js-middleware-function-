@@ -1,0 +1,32 @@
+GET http://localhost:3000/books/?search_q=potter
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsMTIzIiwiaWF0IjoxNjQxMDQ1MTcyfQ.gSX5ed7Yv25CJdQIHb78eucw4yxGzzn0IRbyu497N-o
+
+###
+
+GET http://localhost:3000/books/1/?order_by=price
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsMTIzIiwiaWF0IjoxNjQxMDQ1MTcyfQ.gSX5ed7Yv25CJdQIHb78eucw4yxGzzn0IRbyu497N-o
+###
+
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{    
+    "username": "rahul123",
+    "password": "rahul@456",
+    "gender":"male",
+    "location":"hyderabad"
+}
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{    
+    "username": "rahul123",
+    "password": "rahul@456"
+}
+
+###
+GET http://localhost:3000/profile/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsMTIzIiwiaWF0IjoxNjQxMDQ1MTcyfQ.gSX5ed7Yv25CJdQIHb78eucw4yxGzzn0IRbyu497N-o
